@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { RouterModule} from '@angular/router';
+
 
 @Component({
   selector: 'app-nopagefound',
@@ -6,7 +9,20 @@ import { Component } from '@angular/core';
   styleUrls: [ './nopagefound.component.css' ],
 })
 
+
+
 export class NopagefoundComponent  {
   year= new Date().getFullYear();
 
 }
+
+@NgModule({
+  declarations: [
+    
+  ],  
+  imports: [
+    RouterModule,
+  ],
+})
+
+export class AuthModule { }
